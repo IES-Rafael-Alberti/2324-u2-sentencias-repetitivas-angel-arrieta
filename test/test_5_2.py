@@ -1,5 +1,5 @@
-from src.Ej_1_2 import ejemplo
+from src.Ej_5_2 import inversion
 
 
-def test_ejemplo():
-    assert ejemplo() == ""
+def test_inversion():
+    assert inversion(900, 15, 3) == ""
