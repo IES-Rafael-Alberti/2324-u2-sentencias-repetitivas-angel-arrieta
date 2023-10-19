@@ -7,5 +7,6 @@ def escalera(niveles):
     return dibujo[:-1]
 
 if __name__ == "__main__":
+    # Entrada, proceso y salida
     print(escalera(int(input("Dime la altura de la escalera:\t"))))
 

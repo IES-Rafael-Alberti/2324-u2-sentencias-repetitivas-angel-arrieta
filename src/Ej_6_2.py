@@ -7,4 +7,5 @@ def triangulo(niveles):
     return dibujo[:-1]
 
 if __name__ == "__main__":
+    # Entrada, proceso y salida
     print(triangulo(int(input("Dime la altura del triángulo:\t"))))

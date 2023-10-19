@@ -6,4 +6,5 @@ def impares(ultimo):
 
 
 if __name__ == "__main__":
+    # Entrada, proceso y salida
     print(impares(int(input("Lista de números impares. Dime hasta que número llego\t"))))

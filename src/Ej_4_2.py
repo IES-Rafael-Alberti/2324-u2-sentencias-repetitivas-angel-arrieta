@@ -6,4 +6,5 @@ def cuentaAtras(inicio):
 
 
 if __name__ == "__main__":
+    # Entrada, proceso y salida
     print(cuentaAtras(int(input(">\t"))))

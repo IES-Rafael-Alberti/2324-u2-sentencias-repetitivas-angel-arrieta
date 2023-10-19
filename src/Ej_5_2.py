@@ -10,7 +10,9 @@ def inversion(monto_inicial, interes, anos):
 
 
 if __name__ == "__main__":
+    # Entrada
     balance_inicial = float(input("Calculadora de inversión\nBalance inicial:\t"))
     porcentaje = int(input("Porcentaje de interes:\t"))
     tiempo = int(input("Años de Inversión:\t"))
+    # Proceso y salida
     print(inversion(balance_inicial, porcentaje, tiempo))

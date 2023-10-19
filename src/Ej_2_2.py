@@ -6,4 +6,5 @@ def unaVida(edad):
 
 
 if __name__ == "__main__":
+    # Entrada, proceso y salida
     print(unaVida(int(input("Introduzca su edad\t"))))
