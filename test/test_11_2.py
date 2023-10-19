@@ -1,15 +1,16 @@
 import pytest
-from src.Ej_0_2 import example
+from src.Ej_11_2 import recorre_inversa
 
 
 @pytest.mark.parametrize(
-    "inEjemplo, outMensaje",
+    "inPalabra, outMensaje",
     [
-        ("Referencia1", "Hola"),
-        ("Referencia2", "Saludos")
+        ("pendejo", "o\nj\ne\nd\nn\ne\np"),
+        ("amigo", "o\ng\ni\nm\na"),
+        ("ordenador", "r\no\nd\na\nn\ne\nd\nr\no")
     ]
 )
 
 
-def test_example(inEjemplo, outMensaje):
-    assert example(inEjemplo) == outMensaje
+def test_recorre_inversa(inPalabra, outMensaje):
+    assert recorre_inversa(inPalabra) == outMensaje

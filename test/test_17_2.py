@@ -1,15 +1,17 @@
 import pytest
-from src.Ej_0_2 import example
+from src.Ej_17_2 import suma_digitos
 
 
 @pytest.mark.parametrize(
-    "inEjemplo, outMensaje",
+    "inNumero, outMensaje",
     [
-        ("Referencia1", "Hola"),
-        ("Referencia2", "Saludos")
+        (15, 6),
+        (324, 9),
+        (10, 1),
+        (5, 5)
     ]
 )
 
 
-def test_example(inEjemplo, outMensaje):
-    assert example(inEjemplo) == outMensaje
+def test_suma_digitos(inNumero, outMensaje):
+    assert suma_digitos(inNumero) == outMensaje

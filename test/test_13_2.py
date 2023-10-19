@@ -1,15 +1,17 @@
 import pytest
-from src.Ej_0_2 import example
+from src.Ej_13_2 import resonar
 
 
 @pytest.mark.parametrize(
-    "inEjemplo, outMensaje",
+    "inGrito, outMensaje",
     [
-        ("Referencia1", "Hola"),
-        ("Referencia2", "Saludos")
+        ("Hola", "Hola"),
+        ("Saludos", "Saludos"),
+        ("Okay, let's go", "Okay, let's go"),
+
     ]
 )
 
 
-def test_example(inEjemplo, outMensaje):
-    assert example(inEjemplo) == outMensaje
+def test_resonar(inGrito, outMensaje):
+    assert resonar(inGrito) == outMensaje

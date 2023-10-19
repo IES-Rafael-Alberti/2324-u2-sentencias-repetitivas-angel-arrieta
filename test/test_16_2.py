@@ -1,15 +1,17 @@
 import pytest
-from src.Ej_0_2 import example
+from src.Ej_16_2 import comparador
 
 
 @pytest.mark.parametrize(
-    "inEjemplo, outMensaje",
+    "inAnterior, inActual, outMensaje",
     [
-        ("Referencia1", "Hola"),
-        ("Referencia2", "Saludos")
+        (0, 5, 5),
+        (5, 3, 5),
+        (5, 21, 21),
+        (21, 0, "fuera")
     ]
 )
 
 
-def test_example(inEjemplo, outMensaje):
-    assert example(inEjemplo) == outMensaje
+def test_comparador(inAnterior, inActual, outMensaje):
+    assert comparador(inAnterior, inActual) == outMensaje

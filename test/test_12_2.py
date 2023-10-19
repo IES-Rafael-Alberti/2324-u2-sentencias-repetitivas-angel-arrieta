@@ -1,15 +1,15 @@
 import pytest
-from src.Ej_0_2 import example
+from src.Ej_12_2 import recurrencia
 
 
 @pytest.mark.parametrize(
-    "inEjemplo, outMensaje",
+    "inFrase, inLetra, outMensaje",
     [
-        ("Referencia1", "Hola"),
-        ("Referencia2", "Saludos")
+        ("Un video mas mi gente", "e", 3),
+        ("Salsa y picante", "a", 3)
     ]
 )
 
 
-def test_example(inEjemplo, outMensaje):
-    assert example(inEjemplo) == outMensaje
+def test_recurrencia(inFrase, inLetra, outMensaje):
+    assert recurrencia(inFrase, inLetra) == outMensaje
