@@ -1,15 +1,19 @@
 import pytest
-from src.Ej_0_2 import example
+from src.Ej_10_2 import primo
 
 
 @pytest.mark.parametrize(
-    "inEjemplo, outMensaje",
+    "inUsuario, outMensaje",
     [
-        ("Referencia1", "Hola"),
-        ("Referencia2", "Saludos")
+        (0, "0 no es primo."),
+        (1, "1 no es primo."),
+        (-1, "-1 no es primo."),
+        (5, "5 es primo."),
+        (-7, "-7 es primo."),
+        (4, "4 no es primo."),
+        (-6, "-6 no es primo.")
     ]
 )
 
-
-def test_example(inEjemplo, outMensaje):
-    assert example(inEjemplo) == outMensaje
+def test_primo(inUsuario, outMensaje):
+    assert primo(inUsuario) == outMensaje

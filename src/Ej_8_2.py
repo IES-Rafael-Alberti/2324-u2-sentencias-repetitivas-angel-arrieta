@@ -1,7 +1,11 @@
-def example(ejemplo):
-
-    return None
-
+def escalera(niveles):
+    dibujo = ""
+    for fila in range(niveles):
+        for numero in range((fila+1)*2, 0, -2):
+            dibujo += f" {numero-1}"
+        dibujo += f"\n"
+    return dibujo[:-1]
 
 if __name__ == "__main__":
-    print(example(input(">\t")))
+    print(escalera(int(input("Dime la altura de la escalera:\t"))))
+

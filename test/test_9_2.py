@@ -1,15 +1,15 @@
 import pytest
-from src.Ej_0_2 import example
+from src.Ej_9_2 import identificacion
 
 
 @pytest.mark.parametrize(
-    "inEjemplo, outMensaje",
+    "inUsuario, outMensaje",
     [
-        ("Referencia1", "Hola"),
-        ("Referencia2", "Saludos")
+        ("trebol", "incorrecta"),
+        ("contraseña", "correcta")
     ]
 )
 
 
-def test_example(inEjemplo, outMensaje):
-    assert example(inEjemplo) == outMensaje
+def test_identificacion(inUsuario, outMensaje):
+    assert identificacion(inUsuario) == outMensaje

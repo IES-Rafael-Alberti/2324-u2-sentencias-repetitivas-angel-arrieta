@@ -1,15 +1,18 @@
 import pytest
-from src.Ej_0_2 import example
+from src.Ej_6_2 import triangulo
 
 
 @pytest.mark.parametrize(
-    "inEjemplo, outMensaje",
+    "inNiveles, outMensaje",
     [
-        ("Referencia1", "Hola"),
-        ("Referencia2", "Saludos")
+        (1, "*"),
+        (2, "*\n**"),
+        (3, "*\n**\n***"),
+        (4, "*\n**\n***\n****"),
+        (5, "*\n**\n***\n****\n*****")
     ]
 )
 
 
-def test_example(inEjemplo, outMensaje):
-    assert example(inEjemplo) == outMensaje
+def test_triangulo(inNiveles, outMensaje):
+    assert triangulo(inNiveles) == outMensaje

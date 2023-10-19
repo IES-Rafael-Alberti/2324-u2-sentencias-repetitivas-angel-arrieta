@@ -1,15 +1,16 @@
 import pytest
-from src.Ej_0_2 import example
+from src.Ej_8_2 import escalera
 
 
 @pytest.mark.parametrize(
-    "inEjemplo, outMensaje",
+    "inNiveles, outMensaje",
     [
-        ("Referencia1", "Hola"),
-        ("Referencia2", "Saludos")
+        (3, " 1\n 3 1\n 5 3 1"),
+        (4, " 1\n 3 1\n 5 3 1\n 7 5 3 1"),
+        (5, " 1\n 3 1\n 5 3 1\n 7 5 3 1\n 9 7 5 3 1")
     ]
 )
 
 
-def test_example(inEjemplo, outMensaje):
-    assert example(inEjemplo) == outMensaje
+def test_escalera(inNiveles, outMensaje):
+    assert escalera(inNiveles) == outMensaje
