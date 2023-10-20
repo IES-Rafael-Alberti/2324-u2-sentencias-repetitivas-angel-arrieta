@@ -1,15 +1,33 @@
 import pytest
-from src.Ej_0_2 import example
+from src.Ej_18_2 import contador_paridad, suma_digitos
 
 
 @pytest.mark.parametrize(
-    "inEjemplo, outMensaje",
+    "inPares, inImpares, inNuevo, outPar_Impar",
     [
-        ("Referencia1", "Hola"),
-        ("Referencia2", "Saludos")
+        (0, 0, 7, (0, 1)),
+        (0, 1, 8, (1, 1)),
+        (5, 3, 17, (5, 4))
     ]
 )
 
 
-def test_example(inEjemplo, outMensaje):
-    assert example(inEjemplo) == outMensaje
+def test_contador_paridad(inPares, inImpares, inNuevo, outPar_Impar):
+    assert contador_paridad(inPares, inImpares, inNuevo) == outPar_Impar
+
+
+@pytest.mark.parametrize(
+    "inNumero, outSuma",
+    [
+        (0, 0),
+        (-1, 1),
+        (15, 6),
+        (37, 10),
+        (184, 13),
+        (-47, 11)
+    ]
+)
+
+
+def test_suma_digitos(inNumero, outSuma):
+    assert suma_digitos(inNumero) == outSuma
