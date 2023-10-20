@@ -1,15 +1,15 @@
 import pytest
-from src.Ej_0_2 import example
+from src.Ej_22_2 import paridad_digitos
 
 
 @pytest.mark.parametrize(
-    "inEjemplo, outMensaje",
+    "inNumero, outPar, outImpar",
     [
-        ("Referencia1", "Hola"),
-        ("Referencia2", "Saludos")
+        (457, 1, 2),
+        (13822, 3, 2)
     ]
 )
 
 
-def test_example(inEjemplo, outMensaje):
-    assert example(inEjemplo) == outMensaje
+def test_paridad_digitos(inNumero, outPar, outImpar):
+    assert paridad_digitos(inNumero) == (outPar, outImpar)

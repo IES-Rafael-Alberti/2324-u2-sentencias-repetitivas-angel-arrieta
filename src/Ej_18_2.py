@@ -3,7 +3,7 @@ def contador_paridad(total_pares, total_impares, numero_nuevo):
         resultado = "fuera"
     elif numero_nuevo % 2 == 0:
         total_pares += 1
-        resultado = total_pares, total_impares
+        resultado  = total_pares, total_impares
     elif numero_nuevo % 2 == 1:
         total_impares += 1
         resultado = total_pares, total_impares
@@ -26,7 +26,7 @@ if __name__ == "__main__":
     impares = 0
     # Proceso
     while numero_actual != "terminar":
-        numero_actual = int(input("Introduce numeros enteros\n(Introduce -1 para salir)\t")) # Entrada
+        numero_actual = int(input("Introduce numeros enteros\n(Introduce -1 para salir)\t"))  # Entrada
         dupla_par_impar = contador_paridad(pares, impares, numero_actual)
         ultima_suma_digitos = suma_digitos(numero_actual)
         print(f"Suma de los digitos: {ultima_suma_digitos}")
