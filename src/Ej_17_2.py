@@ -14,4 +14,7 @@ if __name__ == "__main__":
     # Proceso
     suma = suma_digitos(numero)
     # Salida
-    print(f"La suma de sus digitos es {suma}")
+    if type(suma) != type(0):
+        print(suma)
+    else:
+        print(f"La suma de sus digitos es {suma}")
