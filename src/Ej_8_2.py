@@ -1,3 +1,12 @@
+
+
+"""
+Ejercicio 8¶
+
+Escribir un programa que pida al usuario un número entero
+y muestre por pantalla un triángulo rectángulo como el de más abajo.
+"""
+
 def escalera(niveles):
     dibujo = ""
     for fila in range(niveles):

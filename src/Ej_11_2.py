@@ -1,3 +1,12 @@
+
+
+"""
+Ejercicio 11¶
+
+Escribir un programa que pida al usuario una palabra y luego muestre
+por pantalla una a una las letras de la palabra introducida empezando por la última.
+"""
+
 def recorre_inversa(palabra):
     resultado = ""
     for letra in palabra[::-1]:

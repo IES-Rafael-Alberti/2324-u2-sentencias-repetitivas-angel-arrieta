@@ -1,3 +1,12 @@
+
+
+"""
+Ejercicio 2¶
+
+Escribir un programa que pregunte al usuario su edad y muestre
+por pantalla todos los años que ha cumplido (desde 1 hasta su edad).
+"""
+
 def unaVida(edad):
     resultado = ""
     for anos in range(edad):

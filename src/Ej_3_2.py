@@ -1,3 +1,12 @@
+
+
+"""
+Ejercicio 3¶
+
+Escribir un programa que pida al usuario un número entero positivo y muestre por
+pantalla todos los números impares desde 1 hasta ese número separados por comas.
+"""
+
 def impares(ultimo):
     resultado = ""
     for n in range(0, ultimo, 2):

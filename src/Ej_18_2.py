@@ -1,3 +1,13 @@
+
+
+"""
+Ejercicio 18¶
+
+Solicitar al usuario que ingrese números enteros positivos y, por cada uno, imprimir la suma de
+los dígitos que lo componen. La condición de corte es que se ingrese el número -1. Al finalizar,
+mostrar cuántos de los números ingresados por el usuario fueron números pares.
+"""
+
 def contador_paridad(total_pares, total_impares, numero_nuevo):
     if numero_nuevo == -1:
         resultado = "fuera"

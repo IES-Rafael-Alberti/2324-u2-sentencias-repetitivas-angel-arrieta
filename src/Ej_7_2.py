@@ -1,3 +1,11 @@
+
+
+"""
+Ejercicio 7¶
+
+Escribir un programa que muestre por pantalla la tabla de multiplicar del 1 al 10
+"""
+
 def tablaMultiplicar(numero):
     respuesta = ""
     for n in range(10):

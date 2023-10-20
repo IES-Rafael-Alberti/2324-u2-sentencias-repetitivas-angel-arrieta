@@ -1,3 +1,13 @@
+
+
+"""
+Ejercicio 25¶
+
+Solicitar al usuario que ingrese una frase y luego informar cuál fue la palabra más larga
+(en caso de haber más de una, mostrar la primera) y cuántas palabras había.
+Precondición: se tomará como separador de palabras al carácter “ “ (espacio), ya sea uno o más.
+"""
+
 def la_mas_larga(frase: str):  # ;) *guiño*
     respuesta = ""
     frase = frase.split(" ")

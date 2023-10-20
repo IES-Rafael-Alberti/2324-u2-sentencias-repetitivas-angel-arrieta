@@ -1,3 +1,11 @@
+
+
+"""
+Ejercicio 17¶
+
+Leer un número entero positivo desde teclado e imprimir la suma de los dígitos que lo componen.
+"""
+
 def suma_digitos(numero):
     resultado = 0
     numero = list(str(numero))

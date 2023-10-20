@@ -1,3 +1,11 @@
+
+
+"""
+Ejercicio 10¶
+
+Escribir un programa que pida al usuario un número entero y muestre por pantalla si es un número primo o no.
+"""
+
 def primo(usuario):
     if usuario < 0:
         numero = usuario * -1

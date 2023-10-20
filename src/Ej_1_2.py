@@ -1,3 +1,11 @@
+
+
+"""
+Ejercicio 1¶
+
+Escribir un programa que pida al usuario una palabra y la muestre por pantalla 10 veces.
+"""
+
 def decamultiplicador(palabra):
     multiplicado = ""
     for x in range(10):
