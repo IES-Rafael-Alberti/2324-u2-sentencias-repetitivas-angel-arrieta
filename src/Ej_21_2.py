@@ -21,6 +21,7 @@ if __name__ == "__main__":
     while ultimo_monto != 0:
         total_compra = compra(total_compra, ultimo_monto)
         ultimo_monto = int(input("Ingresa los precios de los productos a comprar\n"
+        "(Si la compra supera más de $1000 se aplica un 10% de descuento)\n"
         "(Ingrese 0 para terminar)\t"))  # Entrada
         if ultimo_monto < 0:
             print("Ingrese otro monto")
