@@ -10,5 +10,3 @@ if __name__ == "__main__":
         if eco != "salir":
             # Salida
             print(eco)
-        else:
-            continue
