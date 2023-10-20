@@ -6,7 +6,7 @@ def inversion(monto_inicial, interes, anos):
         cartilla.append(round(monto_inicial, 2))
     for balance_final in cartilla:
         resultado += f"Año {cartilla.index(balance_final)+1} -- {balance_final}\n"
-    return resultado
+    return resultado[:-1]
 
 
 if __name__ == "__main__":
