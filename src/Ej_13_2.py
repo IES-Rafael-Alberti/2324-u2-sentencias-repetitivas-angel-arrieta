@@ -4,9 +4,9 @@ def resonar(grito):
 
 if __name__ == "__main__":
     eco = ""
+    # Proceso
     while eco != "salir":
-        # Entrada y proceso
-        eco = resonar(str(input("Cámara de eco\t")))
+        eco = resonar(str(input("Cámara de eco\t"))) # Entrada
         if eco != "salir":
             # Salida
             print(eco)

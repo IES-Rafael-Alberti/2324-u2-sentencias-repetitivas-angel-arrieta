@@ -6,5 +6,9 @@ def unaVida(edad):
 
 
 if __name__ == "__main__":
-    # Entrada, proceso y salida
-    print(unaVida(int(input("Introduzca su edad\t"))))
+    # Entrada
+    edad = int(input("Introduzca su edad\t"))
+    # Proceso
+    recorrido_vida = unaVida(edad)
+    # Salida
+    print(recorrido_vida)

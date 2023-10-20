@@ -6,5 +6,9 @@ def tablaMultiplicar(numero):
 
 
 if __name__ == "__main__":
-    # Entrada, proceso y salida
-    print(tablaMultiplicar(int(input("Dime de que número quieres tu tabla de multiplicar:\t"))))
+    # Entrada
+    multiplo = int(input("Dime de que número quieres tu tabla de multiplicar:\t"))
+    # Proceso
+    tabla = tablaMultiplicar(multiplo)
+    # Salida
+    print(tabla)

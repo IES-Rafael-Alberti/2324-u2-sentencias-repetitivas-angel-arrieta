@@ -6,5 +6,9 @@ def decamultiplicador(palabra):
 
 
 if __name__ == "__main__":
-    #Entrada, proceso y salida
-    print(decamultiplicador(str(input("Vale del Décimo Eco ¡Grita una palabra!\t"))))
+    # Entrada
+    grito = str(input("Vale del Décimo Eco ¡Grita una palabra!\t"))
+    # Proceso
+    eco = decamultiplicador(grito)
+    # Salida
+    print(eco)

@@ -9,9 +9,10 @@ def sumar(total, actual):
 if __name__ == "__main__":
     sumado = 0
     ultima_suma = 0
+    # Proceso
     while ultima_suma != "fuera":
-        # Entrada y proceso
-        ultima_suma = sumar(sumado, int(input("Mete números para sumar\t")))
+        numero_nuevo = int(input("Mete números para sumar\t")) # Entrada
+        ultima_suma = sumar(sumado, numero_nuevo)
         if ultima_suma != "fuera":
             sumado = ultima_suma
     # Salida

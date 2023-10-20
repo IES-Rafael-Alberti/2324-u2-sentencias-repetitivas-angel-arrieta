@@ -14,5 +14,7 @@ if __name__ == "__main__":
     balance_inicial = float(input("Calculadora de inversión\nBalance inicial:\t"))
     porcentaje = int(input("Porcentaje de interes:\t"))
     tiempo = int(input("Años de Inversión:\t"))
-    # Proceso y salida
-    print(inversion(balance_inicial, porcentaje, tiempo))
+    # Proceso
+    resultado_consulta = inversion(balance_inicial, porcentaje, tiempo)
+    # Salida
+    print(resultado_consulta)

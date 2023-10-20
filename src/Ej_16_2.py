@@ -9,12 +9,13 @@ def comparador(anterior, actual):
 
 
 if __name__ == "__main__":
-    mayor = 0
-    nuevo = 0
-    while nuevo != "fuera":
-        # Entrada y proceso
-        nuevo = comparador(mayor, int(input("Mete números para comparar\t")))
-        if nuevo != "fuera":
-            mayor = nuevo
+    ultimo_mayor = 0
+    nuevo_a_comparar = 0
+    # Entrada
+    while nuevo_a_comparar != "fuera":
+        ultimo_introducido = int(input("Mete números para comparar\t"))# Proceso
+        nuevo_a_comparar = comparador(ultimo_mayor, ultimo_introducido)
+        if nuevo_a_comparar != "fuera":
+            ultimo_mayor = nuevo_a_comparar
     # Salida
-    print(f"{mayor} es el número más grande de todos los  introducidos")
+    print(f"{ultimo_mayor} es el número más grande de todos los  introducidos")

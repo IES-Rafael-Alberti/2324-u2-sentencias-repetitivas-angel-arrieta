@@ -19,5 +19,9 @@ def primo(usuario):
 
 
 if __name__ == "__main__":
-    # Entrada, proceso y salida
-    print(primo(int(input("Dime un numero entero. Te dire si es primo:\t"))))
+    # Entrada
+    numero = int(input("Dime un numero entero. Te dire si es primo:\t"))
+    # Proceso
+    afirmacion = primo(numero)
+    # Salida
+    print(afirmacion)

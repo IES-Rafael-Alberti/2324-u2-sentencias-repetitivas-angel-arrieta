@@ -7,4 +7,8 @@ def cuentaAtras(inicio):
 
 if __name__ == "__main__":
     # Entrada, proceso y salida
-    print(cuentaAtras(int(input(">\t"))))
+    primero = int(input("¿Desde que número comenzamos la cuenta atras?\t"))
+    # Proceso
+    cuenta_regresiva = cuentaAtras(primero)
+    # Salida
+    print(cuenta_regresiva)

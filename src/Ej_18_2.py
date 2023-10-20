@@ -24,9 +24,9 @@ if __name__ == "__main__":
     numero_actual = 0
     pares = 0
     impares = 0
+    # Proceso
     while numero_actual != "terminar":
-        numero_actual = int(input("Introduce numeros enteros\n(Introduce -1 para salir)\t"))
-    #Proceso
+        numero_actual = int(input("Introduce numeros enteros\n(Introduce -1 para salir)\t")) # Entrada
         dupla_par_impar = contador_paridad(pares, impares, numero_actual)
         ultima_suma_digitos = suma_digitos(numero_actual)
         print(f"Suma de los digitos: {ultima_suma_digitos}")
@@ -34,5 +34,5 @@ if __name__ == "__main__":
             numero_actual = "terminar"
         else:
             pares, impares = dupla_par_impar
-    #Salida
+    # Salida
     print(f"De todos los numeros introducidos {pares} son pares y {impares} son impares")
